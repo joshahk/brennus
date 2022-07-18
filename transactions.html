@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brennus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="transactions.css">
+    <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+
+<body>
+  <header class="main-headert">
+    <a href="index.html" class-"brand-logo">
+        <img class="responsive" src="images/logo.svg">
+    </a>
+    <nav class="main-nav">
+        <ul>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "transactions.html">Transactions</a></li>
+            <li><a href = "team.html">Our Team</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- The grid: three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="transform: translateY(0%); background:rgb(255, 255, 255);">   <img style="width:10vw ;" src="images/about/logo5.png" alt=""></div>
+  <div class="column" onclick="openTab('b2');" style="background:rgb(255, 255, 255);">   <img  style="width:10vw ;" src="images/about/image 1.png" alt=""></div>
+  <div class="column" onclick="openTab('b3');" style="transform: translateY(-12%);background:rgb(255, 255, 255);">   <img style="width:15vw ;"  src="images/about/image 2.png" alt=""></div>
+  <div class="column" onclick="openTab('b4');" style="background:rgb(255, 255, 255);">   <img style="width:10vw ;"  src="images/about/image 3.png" alt=""></div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>MCS</h2>
+  <p>•	MCS buys DSOgroup: Advised French debt manager DSO Group SAS and MCS Groupe in their merger which will create a new entity that employs 1,300 people with consolidated 2017 net revenues of more than €130 million.</p>
+</div>
+
+<div id="b2" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Nikko Cordial</h2>
+  <p>Advised Nikko Cordial in their purchase of Menzies Hotel Group £120m From BancBoston Capital: <br><a href="https://www.dorsetecho.co.uk/news/5358573.hotel-group-is-sold-for-120m/">Article</a></p>
+</div>
+
+<div id="b3" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>•	DSOGroup </h2>
+  <p>•	DSOGroup acquires EFFICO: Brokered deal involving BNP Paribas selling 75.5% of the capital of Effico, a subsidiary of BNP Paribas Personal Finance, to DSOgroup</p>
+</div>
+<div id="b4" class="containerTab" >
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Stade Francais Paris </h2>  
+  <p>	Spearheaded Stade Francais Paris sale: Became the vice-president of Stade Français in 2011 after a rescue operation during which a deal was brokered for the Savare family, owners of the Oberthur printing works, to invest 11 million euros in the club thus saving the club from bankcruptcy.</p>
+</div>
+<script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+  </script>
+  
+<!-- Three columns -->
+<div class="row">
+  <div class="column2" onclick="openTab('b5');" style="background:rgb(255, 255, 255);">
+    <img style="width:15vw ;"  src="images/about/image 2.png" alt="">
+  </div>
+  <div class="column2" onclick="openTab('b6');" style="transform: translateY(0%);background:rgb(255, 255, 255);">
+    <img  style="width:15vw ;" src="images/about/image 7.png" alt="">
+  </div>
+  <div class="column2" onclick="openTab('b7');" style="background:rgb(255, 255, 255);">
+    <img style="width:15vw ;"  src="images/about/image 2.png" alt="">
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b5" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>DSO-Interactive </h2>
+  <p>L•	DSO-Interactive buys Sedree: DSO-Interactive buys Société Européenne De Recouvrement et d'Encaissement (Sedree) from its manager and sole shareholder.</p>
+</div>
+
+<div id="b6" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>BancBoston Capital </h2>
+  <p>Advised Interim minority shareholders with BancofBoston to buy shares up to become majority shareholders</p>
+</div>
+
+<div id="b7" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>DSO</h2>
+  <p>•	DSO acquires call center in Mauritius: Advisory in DSO GROUP purchase of AXA's call centre in Mauritius. Buy side mandate for purchase of AXA Assistance Mauritius- subsidiary by iQera.</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+<div class="foot">
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="index.html">Home</a></li>
+  	 				<li><a href="about.html">About Us</a></li>
+  	 				<li><a href="transactions.html">Transactions</a></li>
+  	 				<li><a href="team.html">Our Team</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">Cookie Policy</a></li>
+  	 				<li><a href="#">Terms and Conditions</a></li>
+  	 				<li><a href="#">Modern Slavery Act</a></li>
+  	 				<li><a href="#">Legal Documents</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Contact Us</h4>
+  	 			<ul>
+  	 				<li><a href="#">Email us: xxxxx@gmail.com </a></li>
+  	 				<li><a href="#"></a></li>
+  	 				<li><a href="#">Telephone: xxxxxxxxxxxx</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<div class="social-links">
+             <img src="images/about/logo-blue.svg" alt="">
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+</div>>
+</html>
+
+
+
