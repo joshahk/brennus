@@ -11,18 +11,53 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <a href="index.html" class-"brand-logo">
-            <img class="responsive" src="images/logo.svg">
-        </a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href = "about.html">About</a></li>
-                <li><a href = "transactions.html">Transactions</a></li>
-                <li><a href = "team.html">Our Team</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html"><img style="width: 14vw;" src="images/about/logo-blue.svg" alt=""></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="team.html">Team</a>
+      </div>
+      
+    
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+                <!-- Use any element to open the sidenav -->
+    
+        <header class="main-header">
+
+            <a class="brand-logo">
+                <span style= "padding-right:8%;" onclick="openNav()">
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div>
+                    <div class="menu-icon"></div></span>     
+                    <img src="images/logo.svg" style="width: 15vw;max-width: 300px;">
+                
+
+    
+
+            </a>
+    
+            <nav class="main-nav">
+                <ul>
+                    <li><p><a href="mailto:sunny@pooljones.com?subject=Customer Enquiry!">Contact Us</a></p></li>
+                </ul>
+            </nav>
+        </header>
+    
+      </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "27vw";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+           
 
     <div id="landing-container">
         <img src="images/home-background.png" alt="home-background" class="responsive">
@@ -48,10 +83,12 @@
                 in mind.
              </p>
         </div>
+        
+        <div class="family-containered">
         <div class="narrow-content">
         <div class="clearfix" id="family-container">
             <img id="light-img"  src="images/lighthouse.png" alt="lighthouse">
-            <h1>Our Family</h1>
+            <h2 style="padding-left: 6%; padding-top: 8%; ">Our Family</h2>
             <p id="text">
                 Our successful track record can be accredited to our
                 diverse network and team members that collaborate together
@@ -61,29 +98,33 @@
             </p>
             <a style="padding-left: 35%; text-decoration: none;" class="family-button" href="team.html">See our Team ></a>
         </div>
-        <h1 id="transaction">Transactions</h1>
-        <div id="rower" class="row">
-            <div class="column">
-              </div>
-            <div id="first-logo" class="column">
-              <img id="first-image"  src="images/test1.png" alt="Snow" >
+        </div>
+        </div>
+        <div class="family-containered" >
+
+            <div style="padding-top: 10%;background-color: white;" class="family2-container" >
+                <H2 class="family2-image" style="padding-left: 26%;padding-top: 15%;">Transactions</H2>
+                We execute our task in a thorough and efficient manner.
+                Brennus Investment Advisory is a newly created modern M&A Advisory service composed of experienced individuals with a rich and diverse history in the sector. 
+                Our past transactions showcase the talent capable of each team member and now that Brennus has brought together these great minds, our future transactions look to 
+                be bigger and bolder!.</p>
+                <a style="padding-left: 66%; text-decoration: none;" class="family-button" href="team.html">Transactions ></a>
             </div>
-            <div class="column">
-              <img src="images/test2.png" alt="Forest" >
-            </div>
-            <div class="column">
-              <img src="images/test3.png" alt="Mountains">
-            </div>
-            <div class="column">
-              </div>
-          </div>    
-          <a style="padding-left: 70%; text-decoration: none;" class="family-button" href="transactions.html">See More Transactions ></a>
-          <H1 class="family-header">Join the Family</H1>
-        <p class="family2-container"><img class="family2-image" src="images/home-family-image.png" alt="Pineapple">
+        </div>
+          <div class="family-containered" >
+
+        <div style="padding-right: 10%;" class="family2-container" >
+            <H2 class="family-header" style="padding-left: 66%;">Join the Family</H2>
+        <p><img class="family2-image" src="images/home-family-image.png" alt="Pineapple">
             Brennus offers a gateway into the alluring world of M&A where you’ll have the opportunity to grow your career and make an impact on the world. Our diverse, 
             inclusive culture will ensure that you feel welcome, and we look forward to having people who share our strong values and principles that we are committed to. 
-            If you seek a challenging environment that blends hard work with creative freedom, then Brennus may be the home for you.</p>
-    </div>>
+            If you seek a challenging environment that blends hard work with creative freedom, then Brennus may be the home for you.
+        
+        </p>
+            
+        </div>
+        </div> 
+    </div>
             <footer class="footer">
                 <div class="container">
                     <div class="row">
@@ -108,7 +149,8 @@
                         <div class="footer-col">
                             <h4>Contact Us</h4>
                             <ul>
-                                <li><a href="#">Email us: xxxxx@gmail.com </a></li>
+                
+                                <li><p><a href="mailto:sunny@pooljones.com?subject=Customer Enquiry!">Send email</a></p></li>
                                 <li><a href="#"></a></li>
                                 <li><a href="#">Telephone: xxxxxxxxxxxx</a></li>
                             </ul>
@@ -118,8 +160,7 @@
                       <img src="images/about/logo-blue.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                </div>
+
            </footer>
 </body>
 </html>

@@ -14,13 +14,14 @@
 
 }
 #home-text{
-    padding-top: 30%;
+    padding-top: 25%;
+    padding-bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #home-text #text2{
-    font-size: 3vw;
+    font-size: 2.5vw;
     text-align: center;
     max-width: 50vw;
     transform: translateY(-140%);
@@ -37,9 +38,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.family-containered {
+    padding: 0%;
+    background-color:rgba(208, 208, 219, 0.31);;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 #family-container #light-img{
-    padding: 25px 10 vw;
-    width: 40vw;
+    padding: 25px 5vw;
+    width: 30vw;
     height: auto;
     float: right;
 }
@@ -53,12 +60,7 @@
     width: 50vw;
 }
 
-#family-container #light-img{
-    padding: 25px 10 vw;
-    width: 40vw;
-    height: auto;
-    float: right;
-}
+
 .clearfix:after {
     content:"";
     display:block;
@@ -100,7 +102,7 @@
   }
  
 #transaction{
-    padding-top: 20%;
+    padding-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,21 +123,39 @@
     height: auto;
     float: right;
 }
-
 .family-header{
-    padding-top: 30%;
+    padding-top: 10%;
     padding-left: 63%;
-    
 }
 .family2-container{
     transform: translateX(-6%);
 
     padding-bottom: 10%;
     width: 100vw;
+    background-color:  rgba(208, 208, 219, 0.31);
 }
 .family2-image{
     float: left;
     width: 60vw;
+    padding-top: 5%;
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    transform: translateY(-20%);
   }
+
+.email{
+   min-width: 79px;
+}
+.transaction-container{
+    padding-bottom:10%;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxybox{
+    width: 500px; 
+    float:left; 
+    height:500px; 
+    background:rgb(255, 255, 255); 
+    margin:10px
+}

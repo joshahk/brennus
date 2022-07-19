@@ -11,18 +11,57 @@
 </head>
 
 <body>
-  <header class="main-headert">
-    <a href="index.html" class-"brand-logo">
-        <img class="responsive" src="images/logo.svg">
-    </a>
-    <nav class="main-nav">
-        <ul>
-            <li><a href = "about.html">About</a></li>
-            <li><a href = "transactions.html">Transactions</a></li>
-            <li><a href = "team.html">Our Team</a></li>
-        </ul>
-    </nav>
-</header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="index.html"><img style="width: 14vw;" src="images/about/logo-blue.svg" alt=""></a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="about.html">About</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="team.html">Team</a>
+  </div>
+  
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+            <!-- Use any element to open the sidenav -->
+
+    <header class="main-header">
+
+        <a class="brand-logo">
+            <span style= "padding-right:8%;" onclick="openNav()">
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div></span>     
+                <img  src="images/logo.svg">
+            
+
+
+
+        </a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><p><a href="mailto:sunny@pooljones.com?subject=Customer Enquiry!">Contact Us</a></p></li>
+            </ul>
+        </nav>
+    </header>
+
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "320px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+<div id="landing-container-trans">
+    <img src="images/alt-top-background.png" alt="home-background" class="responsive">
+    <p id="text">Transactions
+    </p>
+
+</div>
 <!-- The grid: three columns -->
 <div class="row">
   <div class="column" onclick="openTab('b1');" style="transform: translateY(0%); background:rgb(255, 255, 255);">   <img style="width:10vw ;" src="images/about/logo5.png" alt=""></div>
@@ -35,26 +74,26 @@
 <div id="b1" class="containerTab">
   <!-- If you want the ability to close the container, add a close button -->
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>MCS</h2>
-  <p>•	MCS buys DSOgroup: Advised French debt manager DSO Group SAS and MCS Groupe in their merger which will create a new entity that employs 1,300 people with consolidated 2017 net revenues of more than €130 million.</p>
+  <h2>MCS buys DSOgroup</h2>
+  <p>Advised French debt manager DSO Group SAS and MCS Groupe in their merger which will create a new entity with consolidated 2017 net revenues of more than €130 million</p>
 </div>
 
 <div id="b2" class="containerTab">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>Nikko Cordial</h2>
-  <p>Advised Nikko Cordial in their purchase of Menzies Hotel Group £120m From BancBoston Capital: <br><a href="https://www.dorsetecho.co.uk/news/5358573.hotel-group-is-sold-for-120m/">Article</a></p>
+  <h2>Nikko Cordial buys Menzies Hotel Group</h2>
+  <p>Advised Nikko Cordial in their purchase of Menzies Hotel Group £120m From BancBoston Capital</p>
 </div>
 
 <div id="b3" class="containerTab">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>•	DSOGroup </h2>
-  <p>•	DSOGroup acquires EFFICO: Brokered deal involving BNP Paribas selling 75.5% of the capital of Effico, a subsidiary of BNP Paribas Personal Finance, to DSOgroup</p>
+  <h2>DSOGroup acquires EFFICO capital</h2>
+  <p>Brokered deal involving BNP Paribas selling 75.5% of the capital of Effico, a subsidiary of BNP Paribas Personal Finance, to DSOgroup</p>
 </div>
 <div id="b4" class="containerTab" >
   <!-- If you want the ability to close the container, add a close button -->
   <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  <h2>Stade Francais Paris </h2>  
-  <p>	Spearheaded Stade Francais Paris sale: Became the vice-president of Stade Français in 2011 after a rescue operation during which a deal was brokered for the Savare family, owners of the Oberthur printing works, to invest 11 million euros in the club thus saving the club from bankcruptcy.</p>
+  <h2>Stade Francais Paris bailed and bought by Savare Family </h2>  
+  <p>	Richard Pool-Jones becomes the vice-president of Stade Français in 2011 after a rescue operation during which a deal was brokered for the Savare family to invest 11 million euros in the club thus saving the club from bankcruptcy.</p>
 </div>
 <script>
   function openTab(tabName) {
@@ -83,8 +122,8 @@
 <!-- Full-width columns: (hidden by default) -->
 <div id="b5" class="containerTab">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>DSO-Interactive </h2>
-  <p>L•	DSO-Interactive buys Sedree: DSO-Interactive buys Société Européenne De Recouvrement et d'Encaissement (Sedree) from its manager and sole shareholder.</p>
+  <h2>DSO-Interactive buys Sedree</h2>
+  <p>DSO-Interactive buys Société Européenne De Recouvrement et d'Encaissement (Sedree) from its manager and sole shareholder</p>
 </div>
 
 <div id="b6" class="containerTab">
@@ -95,8 +134,8 @@
 
 <div id="b7" class="containerTab">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>DSO</h2>
-  <p>•	DSO acquires call center in Mauritius: Advisory in DSO GROUP purchase of AXA's call centre in Mauritius. Buy side mandate for purchase of AXA Assistance Mauritius- subsidiary by iQera.</p>
+  <h2>DSO acquires call centre in Mauritius</h2>
+  <p>Advised DSO GROUP in purchase of AXA's call centre in Mauritius with a buy side mandate for purchase of AXA Assistance Mauritius- subsidiary by iQera</p>
 </div>
 
 <script>
@@ -148,7 +187,7 @@ function openTab(tabName) {
   	 	</div>
   	 </div>
   </footer>
-</div>>
+</div>
 </html>
 
 
